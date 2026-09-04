@@ -1,55 +1,46 @@
-# Cinematic Portfolio Starter
+# Junaid Ur Rehman — Digital Portfolio
 
-A dark/gold cinematic developer portfolio inspired by the reference video style.
+A cinematic personal portfolio presenting AI automation, website development, digital marketing, and content creation services.
 
-## Stack
-- Next.js 16.3.3
-- React 19.2.8
-- Tailwind CSS 4.3
-- GSAP 3.15 + ScrollTrigger
-- Lenis 1.3.26
+## Live routes
+
+- `/` — portfolio homepage
+- `/projects/ai-automation` — WhatsApp AI workflow case study
+- `/projects/website-development` — four website case studies
+- `/projects/digital-marketing` — campaign growth case study
+- `/projects/content-creation` — content workflow case study
+
+## Technology
+
+- Next.js 16
+- React 19
 - TypeScript
+- Tailwind CSS 4
+- GSAP and ScrollTrigger
+- Lenis smooth scrolling
 
-## Run
+## Local development
+
 ```bash
 npm install
 npm run dev
 ```
-Then open http://localhost:3000
 
-## Replace first
-1. Hero name/positioning in `components/Hero.tsx`
-2. Email in `components/Contact.tsx`
-3. Projects, capabilities, stats, and experience in `data/portfolio.ts`
-4. Replace the CSS portrait placeholder with a transparent WebP/PNG portrait
+Open `http://localhost:3000`.
 
-## Suggested real portrait markup
-Replace `.portrait-placeholder` in `Hero.tsx` with Next/Image:
-```tsx
-<Image
-  src="/portrait.webp"
-  alt="Your name"
-  fill
-  priority
-  className="object-contain object-bottom"
-/>
+## Production validation
+
+```bash
+npm run check
+npm run build
 ```
-Give the containing element `position: relative` and a fixed/min height.
 
-## Animation map
-- Navbar: initial slide/fade
-- Hero: staged line reveal
-- Section headings: blur + y reveal using ScrollTrigger
-- Work: sticky stacked cards + scroll scaling
-- Capabilities: staggered card entrance
-- Experience: scroll-driven timeline line
-- Cursor: GSAP-following dot/ring
-- Smooth scrolling: Lenis synchronized to GSAP ticker
+## Deploy on Vercel
 
-## Production next steps
-- Wire contact form to Resend / API route
-- Add actual project links and case-study pages
-- Add `next/image` assets in AVIF/WebP
-- Add OpenGraph metadata
-- Add mobile menu
-- Run Lighthouse and reduce animation on low-power/mobile contexts if necessary
+1. Import this GitHub repository into Vercel.
+2. Keep the detected framework as **Next.js**.
+3. Keep the repository root as the project root.
+4. No environment variables are currently required.
+5. Select **Deploy**.
+
+The contact form opens the visitor's configured email application and does not require a server-side email provider.
