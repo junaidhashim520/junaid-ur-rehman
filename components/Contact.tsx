@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import Image from "next/image";
 import SectionHeading from "./SectionHeading";
 import { profile } from "@/data/portfolio";
 
@@ -44,9 +45,12 @@ export default function Contact() {
           <p className="contact-location">{profile.location} · {profile.phone}</p>
           <a className="whatsapp-link" href={`https://wa.me/${profile.phone.replace(/\D/g, "")}`} target="_blank" rel="noreferrer">MESSAGE ON WHATSAPP <span>↗</span></a>
           <div className="social-links" aria-label="Social links">
-            <a href={profile.socials.tiktok} target="_blank" rel="noreferrer">TIKTOK</a>
-            <a href={profile.socials.instagram} target="_blank" rel="noreferrer">INSTAGRAM</a>
-            <a href={profile.socials.linkedin} target="_blank" rel="noreferrer">LINKEDIN</a>
+            {(["tiktok", "instagram", "linkedin", "fiverr", "upwork", "facebook", "youtube"] as const).map((platform) => (
+              <a key={platform} href={profile.socials[platform]} target="_blank" rel="noopener noreferrer">
+                <Image src={`/icons/${platform}.svg`} alt="" width={18} height={18} />
+                <span>{platform.toUpperCase()}</span>
+              </a>
+            ))}
           </div>
         </div>
 

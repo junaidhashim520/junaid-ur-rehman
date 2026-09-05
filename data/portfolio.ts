@@ -4,6 +4,10 @@ export const profile = {
   location: "Multan, Punjab, Pakistan",
   phone: "+923251099491",
   socials: {
+    fiverr: "https://www.fiverr.com/junaidurrehman4?public_mode=true",
+    upwork: "https://www.upwork.com/freelancers/~019a8638129a6efec8?viewMode=1",
+    facebook: "https://www.facebook.com/junaid.ur.rehman.hashim",
+    youtube: "https://www.youtube.com/@Junaid-Ur-Rehman-91",
     tiktok: "https://www.tiktok.com/@junaid99491",
     instagram: "https://www.instagram.com/do.creative491/",
     linkedin: "https://www.linkedin.com/in/junaid-ur-rehman-09352b3b8/",
