@@ -18,7 +18,7 @@ export const projects = [
     description:
       "A production-minded WhatsApp workflow that receives and normalizes messages, blocks duplicates, adds business context, prepares a safe AI prompt, validates the response, sends the reply, and updates the message log.",
     tags: ["WhatsApp API", "OpenAI", "Webhooks", "Validation", "Message Logs"],
-    image: "/images/ai-whatsapp-automation.png",
+    image: "/images/ai-whatsapp-automation.webp",
     visual: "automation",
     href: "/projects/ai-automation",
     outcome: "INCOMING MESSAGE TO VERIFIED AI REPLY",
@@ -35,10 +35,10 @@ export const projects = [
     href: "/projects/website-development",
     outcome: "04 WEBSITES / DESIGN & DEVELOPMENT",
     gallery: [
-      { title: "JUNAID UR REHMAN PORTFOLIO", image: "/images/project-personal-portfolio.png", position: "50% 25%" },
-      { title: "AUTOMOTIVE COURSE WEBSITE", image: "/images/project-automotive-courses.png", position: "50% 35%" },
-      { title: "PRIME HOME REAL ESTATE", image: "/images/project-prime-home.png", position: "50% 40%" },
-      { title: "FITNESS ARENA GYM", image: "/images/project-fitness-arena.png", position: "50% 35%" },
+      { title: "JUNAID UR REHMAN PORTFOLIO", image: "/images/project-personal-portfolio.webp", position: "50% 25%" },
+      { title: "AUTOMOTIVE COURSE WEBSITE", image: "/images/project-automotive-courses.webp", position: "50% 35%" },
+      { title: "PRIME HOME REAL ESTATE", image: "/images/project-prime-home.webp", position: "50% 40%" },
+      { title: "FITNESS ARENA GYM", image: "/images/project-fitness-arena.webp", position: "50% 35%" },
     ],
   },
   {
